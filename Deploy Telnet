@@ -1,6 +1,0 @@
-- hosts: "{{ hosts }}"
-  become: no
-  tasks:
-    - name: install telnet
-      yum: name=telnet state=latest
-      
