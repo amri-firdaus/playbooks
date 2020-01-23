@@ -1,4 +1,4 @@
-- hosts: "{{ hosts }}"
+- hosts: "{{ all }}"
   become: no
   tasks:
     - name: install telnet
