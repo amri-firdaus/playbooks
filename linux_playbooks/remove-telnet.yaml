@@ -1,5 +1,5 @@
 - hosts: all
-  become: no
+  become: yes
   tasks:
     - name: remove telnet
       yum: name=telnet state=absent
