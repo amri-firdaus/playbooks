@@ -1,0 +1,9 @@
+- name: test cmd from win module
+  hosts: windows
+  tasks:
+    - name: Uninstall 7-Zip via win_package
+      win_package:
+        product_id: 7-Zip
+        arguments: /S
+        state: absent
+      

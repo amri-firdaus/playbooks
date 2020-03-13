@@ -1,0 +1,5 @@
+- hosts: all
+  become: no
+  tasks:
+    - name: install telnet
+      yum: name=telnet state=latest

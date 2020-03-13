@@ -1,0 +1,10 @@
+- name: test cmd from win module
+  hosts: windows
+  tasks:
+    - name: Install 7-Zip via win_package
+      win_package:
+        path: C:\Source\7z1900-x64.exe
+        arguments: /S
+        product_id: 7-Zip
+        state: present
+      
