@@ -1,5 +1,5 @@
 - name: test cmd from win module
-  hosts: windows
+  hosts: all
   tasks:
     - name: Install 7-Zip via win_package
       win_package:
