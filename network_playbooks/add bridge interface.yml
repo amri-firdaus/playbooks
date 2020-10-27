@@ -1,6 +1,9 @@
-- name: network_cli
-  hosts: all
+---
+- hosts: all
+  connection: network_cli
+  gather_facts: no
+
   tasks:
-    - name: add bridge interface
-      routeros_command:
-        commands: "interface bridge add name=demo_bridge"
+  - name: Contoh Menambahkan Bridge Interface
+    routeros_command:
+      commands: interface bridge add name=demo_bridge
