@@ -1,0 +1,6 @@
+- name: network_cli
+  hosts: all
+  tasks:
+    - name: add bridge interface
+      routeros_command:
+        commands: "interface bridge add name=demo_bridge"
