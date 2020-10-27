@@ -4,6 +4,6 @@
   gather_facts: no
 
   tasks:
-  - name: Contoh Menambahkan Bridge Interface
+  - name: Contoh Menambahkan Bridge Interface Pada RouterBoard MikroTik
     routeros_command:
       commands: interface bridge add name=demo_bridge
